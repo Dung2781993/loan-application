@@ -64,7 +64,15 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+        ],
 
+        'admin' => [
+            'driver' => 'passport',
+            'provider' => 'admins',
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
