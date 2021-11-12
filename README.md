@@ -56,7 +56,8 @@ Admin can view overdued loans
 
 - Update Env file with database name 
 
-![image](https://user-images.githubusercontent.com/10462068/141445356-ae78af6f-af2d-4b92-a882-744d5b29ab85.png)
+![image](https://user-images.githubusercontent.com/10462068/141446626-f03bcfa0-db20-42b4-a929-42f814d82f50.png)
+
 
 ## Installation process
 
