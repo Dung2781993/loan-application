@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Loan Application
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
+This is a demo of Loan repayment system built with Laravel framework. 
+The APIs will allows to handle user loans. 
+The following features/functions will be includes.
 
-## About Laravel
+## Users
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Use case 1:
+User can register via API to make loan or payment
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Use case 2:
+User can login via API
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Use case 3:
+User can request a loan via API
+ 
 
-## Learning Laravel
+### Use case 3:
+User can view his/her loans via API
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Use case 4:
+User can accept the loan via API
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### Use case 5:
+User can make payment via API
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Admin
 
-### Premium Partners
+### Use case 1:
+Admin can register
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+### Use case 2:
+Admin can login via API
 
-## Contributing
+### Use case 3:
+Admin can offer loans to users via API
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Use case 4:
+Admin can view loan details via API
 
-## Code of Conduct
+### Use case 5:
+Admin can view overdued loans
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Database schema
 
-## Security Vulnerabilities
+![enity tables](https://user-images.githubusercontent.com/10462068/141443188-bfcff395-9619-48ae-87e2-99ead0468b72.PNG)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Entity Diagram
 
-## License
+![image](https://user-images.githubusercontent.com/10462068/141445227-815d49f3-ea51-40c8-a0e6-e21a46b4721c.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Setup Env
+
+- Update Env file with database name 
+
+![image](https://user-images.githubusercontent.com/10462068/141445356-ae78af6f-af2d-4b92-a882-744d5b29ab85.png)
+
+## Installation process
+
+- Step 1: Clone the application via github
+- Step 2: Setup localhost. In this case, we use Wamp or xampp (https://www.wampserver.com/en/) - (https://www.apachefriends.org/index.html)
+- Step 3: Install laravel and composer (https://laravel.com/docs/8.x/installation)
+- Step 4: Create database like env file 
+- Step 5: Running: composer install and setup config/database.php
+- Step 6: Running: php artisan migrate to create database schema
+- Step 7: Setting up OAuth2  by running: php artisan passport:client --personal  
+- Step 8: Try api on postman accoding to endpoint in api.php file (
+
+![image](https://user-images.githubusercontent.com/10462068/141446377-83c4f4b1-17e0-4f8b-8999-8f13f6824dea.png)
+
+![image](https://user-images.githubusercontent.com/10462068/141446412-f5415b35-e19e-47dc-bdde-cedea97c5e9d.png)
+
+
