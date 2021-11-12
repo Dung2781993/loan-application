@@ -50,8 +50,9 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('login', 'API\AdminController@login');
 
     /* authenticated routes */
-    Route::group(['middleware' => 'auth:admin'], function(){
-    Route::post('loan/offer', 'API\LoanController@offerLoan');
-    Route::post('loan/details', 'API\LoanController@details');
-    Route::post('loan/overdue', 'API\LoanController@overdue');
+    Route::group(['middleware' => 'auth:admin'], function () {
+        Route::post('loan/offer', 'API\LoanController@offerLoan');
+        Route::post('loan/details', 'API\LoanController@details');
+        Route::post('loan/overdue', 'API\LoanController@overdue');
+    });
 });
