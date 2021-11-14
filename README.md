@@ -67,8 +67,9 @@ Admin can view overdued loans
 - Step 4: Create database like env file 
 - Step 5: Running: composer install and setup config/database.php
 - Step 6: Running: php artisan migrate to create database schema
-- Step 7: Setting up OAuth2  by running: php artisan passport:client --personal  
-- Step 8: Try api on postman accoding to endpoint in api.php file (
+- Step 7: Running: composer require laravel/passport
+- Step 8: Setting up OAuth2  by running: php artisan passport:client --personal  
+- Step 9: Try api on postman accoding to endpoint in api.php file (
 
 ![image](https://user-images.githubusercontent.com/10462068/141446377-83c4f4b1-17e0-4f8b-8999-8f13f6824dea.png)
 
