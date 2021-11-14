@@ -71,8 +71,8 @@ Admin can view overdued loans
 - Step 8: Setting up OAuth2  by running: php artisan passport:client --personal  
 - Step 9: Try api on postman accoding to endpoint in api.php file (
 
-![image](https://user-images.githubusercontent.com/10462068/141446377-83c4f4b1-17e0-4f8b-8999-8f13f6824dea.png)
+![image](https://user-images.githubusercontent.com/10462068/141688871-8837177e-cceb-43c5-88ec-db74db409794.png)
 
-![image](https://user-images.githubusercontent.com/10462068/141446412-f5415b35-e19e-47dc-bdde-cedea97c5e9d.png)
+
 
 
