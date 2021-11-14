@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Request extends Model
+class LoanRequest extends Model
 {
-    protected $table = 'request';
+    protected $table = 'loan_request';
     protected $primaryKey = 'id';
     protected $fillable = ['user_id', 'amount', 'duration'];
 }

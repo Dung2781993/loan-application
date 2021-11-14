@@ -6,7 +6,7 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
 
 # Model
-use App\Models\Request;
+use App\Models\LoanRequest;
 use App\Models\Loan;
 
 # Interface
@@ -29,12 +29,12 @@ class LoanRepo implements LoanInterface
     {    
          $new_data = array_merge($data, [ 'user_id'  => $uid]);
 
-         return Request::create($new_data);
+         return LoanRequest::create($new_data);
     }
 
     public function getRequestedLoans($uid)
     {
-         return Request::where('user_id', $uid)->get();
+         return LoanRequest::where('user_id', $uid)->get();
     }
    
 
